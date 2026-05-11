@@ -1,28 +1,36 @@
-# Calculateur-carbo
+# CO2 Carbonation Calculator
 
-Application web pour calculer la pression d'équilibre CO2 et la durée de carbonatation d'une bière.
+A web app to calculate CO2 equilibrium pressure and carbonation time for homebrewed beer.
 
-Les calculs sont basés sur un document Excel partagé sur brassageamateur.com :
-- [Discussion](https://www.brassageamateur.com/forum/viewtopic.php?f=56&t=7652&p=84017&hilit=boite+%C3%A0+outils+carbo#p84017)
-- [Fichier source](https://www.brassageamateur.com/forum/download/file.php?id=296)
+## Why
 
-## Utilisation
+When I started kegging instead of bottling my beers I had to figure out which pressure to apply to my keg in order to get a good beer. I used [this spreadsheet](https://www.brassageamateur.com/forum/download/file.php?id=296) from the [brassageamateur.com](https://www.brassageamateur.com/forum/viewtopic.php?f=56&t=7652&p=84017&hilit=boite+%C3%A0+outils+carbo#p84017) community. It works but I need to have a computer. So I decided to port it to a web tool.
 
-1. Sélectionnez le type de bière et ajustez la carbonatation désirée.
-2. Renseignez la température, le volume, la surface d'échange, la tension initiale et la pression dans le fût.
-3. Cliquez sur **Calculer**.
+## What it does
 
-L'application est utilisable en PWA (ajout à l'écran d'accueil depuis le navigateur).
+- Calculates CO2 equilibrium pressure based on temperature and desired carbonation
+- Estimates carbonation time based on keg parameters
+- Available as a PWA — add it to your home screen from your browser
 
-## Installation locale
+<p align="center">
+  <img src="screenshot.jpeg" width="45%"/>
+</p>
+
+## Usage
+
+1. Select your beer style and adjust the desired carbonation level
+2. Enter temperature, volume, exchange surface, initial pressure and keg pressure
+3. Hit **Calculate**
+
+## Run locally
 
 ```sh
 git clone https://github.com/Nem0oo/Calculateur-carbo.git
 cd Calculateur-carbo
 ```
 
-Servez ensuite les fichiers du dossier `code/` avec n'importe quel serveur web. Voir [ExempleDocker.md](ExempleDocker.md) pour un exemple avec Docker.
+Serve the files in `code/` with any web server. See [ExempleDocker.md](ExempleDocker.md) for a Docker example.
 
 ---
 
-**Auteur :** Nem0oo — licence MIT
+MIT License — Nem0oo
