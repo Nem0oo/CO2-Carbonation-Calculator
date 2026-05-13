@@ -41,7 +41,7 @@ jobs:
 
   build_and_push_to_docker_hub:
     if: github.event_name == 'push'
-    name: Build Docker Image with tags
+    name: Build Docker Image with tag
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
